@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/VisualNovelToolkit/Examples/Example Dialog/Example Dialog.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: decef6e20faeb3844a393743887710de
+  - enabled: 1
+    path: Assets/Scenes/IntroCutScene.unity
+    guid: eb6468c34ff61064a96ac13c317eaea4
+  - enabled: 1
     path: Assets/Scenes/DialogMalikRoom.unity
     guid: 65752b0fd7bdc3547bb4a6a84375f2c5
   - enabled: 1
