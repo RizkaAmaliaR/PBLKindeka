@@ -5,28 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public float currentHealth;
+    public int curHealth;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if(currentHealth <= 0)
+        if (other.tag == "NPC")
         {
-            gameObject.SetActive(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // Reduce player health
+            curHealth--;
+            Debug.Log("Hit");
+
         }
     }
 }

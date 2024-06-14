@@ -5,7 +5,7 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour
 {
     public float waitToHurt = 2f;
-    public int damage;
+    public int Dmg; // damage
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +21,10 @@ public class HurtPlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        HealthManager playerHealth = collision.gameObject.GetComponent<HealthManager>();
-        if (playerHealth != null)
+        HealthManager curHealth = collision.gameObject.GetComponent<HealthManager>();
+        if (curHealth != null)
         {
-            playerHealth.TakeDamage(damage);
+            //curHealth.TakeDamage(Dmg);
         }
     }
 }

@@ -18,6 +18,7 @@ public class NPCfollow : MonoBehaviour
     public Vector3 startPos;
 
     public GameObject UIWarning;
+    public GameObject UIInfoWarning;
 
     public Animator anim;
 
@@ -62,7 +63,6 @@ public class NPCfollow : MonoBehaviour
         if (distance < range)
         {
             currentTarget = target;
-            //UIWarning.SetActive(true);
         }
         else if (distance > maxRange)
         {
@@ -75,12 +75,12 @@ public class NPCfollow : MonoBehaviour
         if (distance < warning)
         {
             UIWarning.SetActive(true);
-            Debug.Log("UI ACTIVE");
+            UIInfoWarning.SetActive(true);
         }
         else
         {
             UIWarning.SetActive(false);
-            Debug.Log("UI NOT ACTIVE");
+            UIInfoWarning.SetActive(false);
         }
     }
 
