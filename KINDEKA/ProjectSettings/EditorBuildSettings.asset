@@ -13,10 +13,13 @@ EditorBuildSettings:
     guid: decef6e20faeb3844a393743887710de
   - enabled: 1
     path: Assets/Scenes/IntroCutScene.unity
-    guid: eb6468c34ff61064a96ac13c317eaea4
+    guid: b5a91399f7d9b284a84e46bd77ef1e9e
   - enabled: 1
     path: Assets/Scenes/DialogMalikRoom.unity
     guid: 65752b0fd7bdc3547bb4a6a84375f2c5
+  - enabled: 1
+    path: Assets/Scenes/DialoginDuniaWondelik.unity
+    guid: eb6468c34ff61064a96ac13c317eaea4
   - enabled: 1
     path: Assets/Scenes/Lvl1.unity
     guid: 7811ea900d4e94f48a19c14696e6dff5

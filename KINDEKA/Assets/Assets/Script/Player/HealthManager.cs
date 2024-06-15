@@ -7,9 +7,9 @@ public class HealthManager : MonoBehaviour
 {
     public int curHealth;
 
-    void OnTriggerEnter(Collider other)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (other.tag == "NPC")
+        if (hit.collider.CompareTag("NPC"))
         {
             // Reduce player health
             curHealth--;
