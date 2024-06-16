@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.24, y: 1.05, z: 6.45}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1412333053553097189}
@@ -119,8 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a17bf314a57d443962c6f168455d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StarText: {fileID: 0}
   UIInteract: {fileID: 0}
+  UIFindWord: {fileID: 0}
+  ifGrab: 0
 --- !u!1 &6522711241175280306
 GameObject:
   m_ObjectHideFlags: 0

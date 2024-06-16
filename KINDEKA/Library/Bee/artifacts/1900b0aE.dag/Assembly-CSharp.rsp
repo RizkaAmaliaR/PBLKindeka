@@ -379,6 +379,7 @@
 "Assets/Assets/Script/Camera/CameraLook.cs"
 "Assets/Assets/Script/Dialog/inkManager.cs"
 "Assets/Assets/Script/DummySelection.cs"
+"Assets/Assets/Script/Minimap/MinimapScript.cs"
 "Assets/Assets/Script/NPC/AIPatrol.cs"
 "Assets/Assets/Script/NPC/HurtPlayer.cs"
 "Assets/Assets/Script/NPC/NPCfollow.cs"

@@ -10,8 +10,6 @@ public class Interaction : MonoBehaviour
 
     [SerializeField] public GameObject UIFindWord;
 
-    public GameObject scriptPointPlace;
-
     public bool ifGrab;
 
     private void Start()
