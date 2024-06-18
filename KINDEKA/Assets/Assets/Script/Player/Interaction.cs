@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
+    public int[] itemId;
 
     [SerializeField] protected GameObject UIInteract;
 
     [SerializeField] public GameObject UIFindWord;
 
-    public bool ifGrab;
+    public bool ifGrab = false;
 
     private void Start()
     {

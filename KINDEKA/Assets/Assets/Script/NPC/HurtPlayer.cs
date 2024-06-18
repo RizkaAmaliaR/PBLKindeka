@@ -4,27 +4,44 @@ using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour
 {
-    public float waitToHurt = 2f;
-    public int Dmg; // damage
+    private int damageToGive = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    public float waitToHurt;
+
+    private HealthManager healtMan;
+
+    public bool isTouching;
+
+    private void Start()
+    {
+        healtMan = FindObjectOfType<HealthManager>();
+    }
+
+    private void Update()
     {
        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        HealthManager curHealth = collision.gameObject.GetComponent<HealthManager>();
-        if (curHealth != null)
+        if (collision.collider.tag == "Player")
         {
-            //curHealth.TakeDamage(Dmg);
+            Debug.Log("Hit");
+            waitToHurt -= Time.deltaTime;
+            if (waitToHurt <= 0)
+            {
+                healtMan.HurtPlayer(damageToGive);
+                waitToHurt = 1f;
+            }
         }
+        
     }
+    /*private void OnCollisionStay(Collision other)
+    {
+        if(other.collider.tag == "Player")
+        {
+            Debug.Log("Hit");
+            isTouching = true;
+        }
+    }*/
 }
