@@ -19,13 +19,9 @@ public class Point : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Box") && interactScript.ifGrab == true)
+        if(other.CompareTag("Box"))
         {
-            if (interactScript.ifGrab == true)
-            {
-                point++;
-                PointText.text = "Point : " + point;
-            }
+            
         }
 
     }

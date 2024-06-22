@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8042224203979937793}
   - component: {fileID: 3488815851955378039}
   - component: {fileID: 7316147701432520450}
-  - component: {fileID: 9089977516725522194}
   m_Layer: 0
   m_Name: Box
   m_TagString: Box
@@ -107,21 +106,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9089977516725522194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2705321466058660813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92a17bf314a57d443962c6f168455d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIInteract: {fileID: 0}
-  UIFindWord: {fileID: 0}
-  ifGrab: 0
 --- !u!1 &6522711241175280306
 GameObject:
   m_ObjectHideFlags: 0

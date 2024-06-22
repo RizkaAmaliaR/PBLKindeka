@@ -36,12 +36,4 @@ public class HurtPlayer : MonoBehaviour
         }
         
     }
-    /*private void OnCollisionStay(Collision other)
-    {
-        if(other.collider.tag == "Player")
-        {
-            Debug.Log("Hit");
-            isTouching = true;
-        }
-    }*/
 }

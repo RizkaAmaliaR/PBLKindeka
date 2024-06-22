@@ -156,7 +156,7 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 1c383f2f1f67d184e80436756c72fdbe, type: 3}
+  - {fileID: 21300000, guid: ed1591f8d31407a45be8f4e46a77ccf1, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -544,7 +544,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &683065522
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -559,17 +559,19 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "ibu ibu left: Nak, jangan tidur dulu, ya. Ibu mau membacakan sesuatu
-      buat kamu. \nmalik malik right: Mau membacakan apa sih Bu? Biasanya juga langsung
-      tidur saja.\nibu ibu left: Ini loh, ibu tadi ke toko buku, \rterus Ibu menemukan
-      buku dongeng. \rCoba deh liat (Malik baca judulnya)\nmalik malik right: ...
-      {w=0,6} HAHA\nibu ibu left: Lucu kan? Ada nama Malik di sini.\nmalik malik
-      right: Ya... lucu {w=0,6}, sedikit \nibu ibu left: Dengar ceritanya, ya, Nak.\nibu
-      ibu left: Nun jauh di sana, hiduplah seorang \ranak bernama Malik. Malik adalah
-      \ranak yang cerdas dan cekatan. \rMalik bercita-cita untuk menjadi \rseorang
-      penulis. Malik suka \rmenulis cerita-cerita pendek di \rbuku hariannya. Cerita-cerita
-      \rtentang persahabatan dengan tokoh-\rtokoh hewan seperti yang sering \rdia
-      lihat di kartun hari Minggu \radalah favoritnya\u2013 \nmalik malik right:
-      Zzzz\nibu ibu left: Tidak apa-apa, besok kita coba lagi. "
+      buat kamu. \nhide ibu:\nmalik malik right: Mau membacakan apa sih Bu? Biasanya
+      juga langsung tidur saja.\nhide malik:\nibu ibu left: Ini loh, ibu tadi ke
+      toko buku, \rterus Ibu menemukan buku dongeng. \rCoba deh liat (Malik baca
+      judulnya)\nhide ibu:\nmalik malik right: ... {w=0,6} HAHA\nhide malik:\nibu
+      ibu left: Lucu kan? Ada nama Malik di sini.\nhide ibu:\nmalik malik right:
+      Ya... lucu {w=0,6}, sedikit \nhide malik:\nibu ibu left: Dengar ceritanya,
+      ya, Nak.\nibu ibu left: Nun jauh di sana, hiduplah seorang \ranak bernama Malik.
+      Malik adalah \ranak yang cerdas dan cekatan. \rMalik bercita-cita untuk menjadi
+      \rseorang penulis. Malik suka \rmenulis cerita-cerita pendek di \rbuku hariannya.
+      Cerita-cerita \rtentang persahabatan dengan tokoh-\rtokoh hewan seperti yang
+      sering \rdia lihat di kartun hari Minggu \radalah favoritnya\u2013 \nhide ibu:\nmalik
+      malik right: Zzzz\nhide malik:\nibu ibu left: Tidak apa-apa, besok kita coba
+      lagi. \nhide ibu:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -584,7 +586,7 @@ MonoBehaviour:
     booleanVal: 1
 --- !u!114 &683065523
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -603,7 +605,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &683065524
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -624,7 +626,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &683065525
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1111,7 +1113,7 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: f43a3495f22d5ef43a80eb1d012a443a, type: 3}
+  - {fileID: 21300000, guid: e8bdaacf769bef34b90931d71bd0c40e, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1298,7 +1300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 751, y: -1000}
+  m_AnchoredPosition: {x: 751, y: -797}
   m_SizeDelta: {x: 500, y: 700}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1619643579461748373
@@ -1686,7 +1688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -759, y: -1000}
+  m_AnchoredPosition: {x: -759, y: -797}
   m_SizeDelta: {x: 500, y: 700}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7927733673525511845

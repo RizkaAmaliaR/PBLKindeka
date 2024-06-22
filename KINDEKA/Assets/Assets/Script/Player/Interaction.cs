@@ -2,16 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Interaction : MonoBehaviour
 {
-    public int[] itemId;
 
     [SerializeField] protected GameObject UIInteract;
 
     [SerializeField] public GameObject UIFindWord;
 
+    public GameObject UINextScene;
+    public GameObject WordMengembara;
+    public GameObject WordBeruang;
+    public GameObject WordMengendus;
+    public GameObject WordMenyentuh;
+    public GameObject WordBersahabat;
+
     public bool ifGrab = false;
+
+    //public int boxCount = 0;
 
     private void Start()
     {
@@ -33,7 +42,7 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    public void Grab()
+    public void Grab(GameObject other)
     {
         if (UIInteract.activeSelf)
         {
@@ -42,6 +51,11 @@ public class Interaction : MonoBehaviour
             Destroy(gameObject);
 
             UIFindWord.SetActive(true);
+
+            if (UINextScene.activeSelf)
+            {
+                SceneManager.LoadScene("Lvl2");
+            }
         }
     }
 

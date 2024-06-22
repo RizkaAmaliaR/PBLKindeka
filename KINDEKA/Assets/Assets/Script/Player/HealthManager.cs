@@ -9,8 +9,6 @@ public class HealthManager : MonoBehaviour
 
     public int numOfHearts;
 
-    //public float waitToHurt = 2f;
-
     public Image[] hearts;
 
     public Sprite fullHeart;
@@ -47,25 +45,6 @@ public class HealthManager : MonoBehaviour
             
         }
     }
-
-    /*void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("NPC"))
-        {
-            waitToHurt -= Time.deltaTime;
-            if (waitToHurt <= 0)
-            {
-                health--;
-                waitToHurt = 0.5f;
-            }
-
-            if(health < 0)
-            {
-                gameObject.SetActive(false);
-            }
-            Debug.Log("Player collided with NPC");
-        }
-    }*/
 
     public void HurtPlayer(int damageToGive)
     {

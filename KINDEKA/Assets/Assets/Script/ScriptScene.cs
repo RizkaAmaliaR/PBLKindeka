@@ -15,4 +15,9 @@ public class ScriptScene : MonoBehaviour
         Application.Quit();
         Debug.Log("Game is Closed");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

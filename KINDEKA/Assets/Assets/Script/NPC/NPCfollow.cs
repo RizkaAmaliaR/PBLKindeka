@@ -63,24 +63,26 @@ public class NPCfollow : MonoBehaviour
         if (distance < range)
         {
             currentTarget = target;
+            UIInfoWarning.SetActive(true);
         }
         else if (distance > maxRange)
         {
             currentTarget = null;
+            UIInfoWarning.SetActive(false);
         }
 
-        float warning = range / 2;
+        float warning = range / 5;
 
         // Aktifkan UIWarning jika jarak adalah setengah dari range
         if (distance < warning)
         {
             UIWarning.SetActive(true);
-            UIInfoWarning.SetActive(true);
+            //UIInfoWarning.SetActive(true);
         }
         else
         {
             UIWarning.SetActive(false);
-            UIInfoWarning.SetActive(false);
+            //UIInfoWarning.SetActive(false);
         }
     }
 
