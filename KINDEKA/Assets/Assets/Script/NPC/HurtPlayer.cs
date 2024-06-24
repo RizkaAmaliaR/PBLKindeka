@@ -31,7 +31,7 @@ public class HurtPlayer : MonoBehaviour
             if (waitToHurt <= 0)
             {
                 healtMan.HurtPlayer(damageToGive);
-                waitToHurt = 1f;
+                waitToHurt = 0.5f;
             }
         }
         
