@@ -458,7 +458,10 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: ed1591f8d31407a45be8f4e46a77ccf1, type: 3}
+  - {fileID: 21300000, guid: dde51e55acd0f4b448518b671d32978c, type: 3}
+  - {fileID: 21300000, guid: e0d0f270b8f1d994aaa1c766e8a6e89d, type: 3}
+  - {fileID: 21300000, guid: 645ed3752e47eef47b0d1b402302f12c, type: 3}
+  - {fileID: 21300000, guid: 91b6f84373dcb2b41927910eb20601d9, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -758,7 +761,7 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: cebd6cd0ba1f3ce4591636f107e01e54, type: 3}
+  - {fileID: 21300000, guid: 6848446231d7af347a13711b5da52c6f, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -953,9 +956,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 74
-    y: 72
-    width: 158
+    x: 75.06383
+    y: 74.127655
+    width: 156.38297
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -988,11 +991,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 2.0317688, y: -0.7845764}
+  scrollPos: {x: 7.074317, y: 1.9291717}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 306.8
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1002,7 +1005,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1646858063}
   selectedCommands:
-  - {fileID: 1646858066}
+  - {fileID: 1646858068}
   variables: []
   description: 
   stepPause: 0
@@ -1046,30 +1049,30 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "reno reno left: Hohoho... Aku tidak pernah melihat \rkalian sebelumnya.
-      Siapa kalian? \nhide reno:\nmalik malik right: B -{w=0,6} bu! {w=0,6} Badaknya
-      bisa ngomong ! \nhide malik:\nibu ibu right: Kami baru pertama kali ke sini.
-      \rEntah bagaimana ceritanya, kami \rjuga tidak tahu. {w= 0,6} Ini Malik, dan
-      \rsaya adalah ibunya.\nhide ibu:\nreno reno left: Ah, kalian adalah ibu dan
-      anak. Namaku Reno.  Malik benar, aku \radalah seekor badak. Selamat \rdatang
-      di dunia Wonderlik! \nhide reno:\nibu ibu right: Wonderlik?\nhide ibu:\nreno
-      reno left: Betul! {w=0,4} dunia ini bernama Wonderlik. Dunia dimana kamu bisa
-      menemukan dan menciptakan segala cerita yang menarik!\nhide reno:\nmalik malik
-      right: Apa itu maksudnya, Bu? \nhide malik:\nibu ibu left: Kenapa kami bisa
-      ada di Wonderlik? Apakah kamu tahu bagaimana caranya keluar dari sini? \nhide
-      ibu:\nreno reno right: Buru-buru banget sih kalian. Memangnya kalian tidak
-      mau menikmati keindahan Wonderlik ini? {w=0,6} Kalau cara keluar sih tentu
-      saja aku tahu. \nhide reno:\nibu ibu left: Bukannya kami tidak mau menikmati
-      keberadaan kami di sini, Reno. Tetapi Wonderlik bukan dunia kami. Kami tersesat
-      di sini. \nhide ibu:\nreno reno right: Baiklah kalau begitu. Karena aku baik
-      hati, aku akan menunjukkan caranya keluar dari Wonderlik untuk kalian. \nhide
-      reno:\nmalik malik left: Bagaimana caranya, Reno? \nhide malik:\nreno reno
-      right: Yang pertamaaa\u2014\nAku punya sebuah buku dongeng, tapi kata-kata
+      Siapa kalian? \nhide reno:\nmalik malikTerkejut right: B -{w=0,6} bu! {w=0,6}
+      Badaknya bisa ngomong ! \nhide malik:\nibu ibu left: Kami baru pertama kali
+      ke sini. \rEntah bagaimana ceritanya, kami \rjuga tidak tahu. {w= 0,6} Ini
+      Malik, dan \rsaya adalah ibunya.\nhide ibu:\nreno reno right: Ah, kalian adalah
+      ibu dan anak. Namaku Reno.  Malik benar, aku \radalah seekor badak. Selamat
+      \rdatang di dunia Wonderlik! \nhide reno:\nibu ibuBingung left: Wonderlik?\nhide
+      ibu:\nreno reno right: Betul! {w=0,4} dunia ini bernama Wonderlik. Dunia dimana
+      kamu bisa menemukan dan menciptakan segala cerita yang menarik!\nhide reno:\nmalik
+      malikBingung left: Apa itu maksudnya, Bu? \nhide malik:\nibu ibuBingung right:
+      Kenapa kami bisa ada di Wonderlik? Apakah kamu tahu bagaimana caranya keluar
+      dari sini? \nhide ibu:\nreno reno left: Buru-buru banget sih kalian. Memangnya
+      kalian tidak mau menikmati keindahan Wonderlik ini? {w=0,6} Kalau cara keluar
+      sih tentu saja aku tahu. \nhide reno:\nibu ibuSerius right: Bukannya kami tidak
+      mau menikmati keberadaan kami di sini, Reno. Tetapi Wonderlik bukan dunia kami.
+      Kami tersesat di sini. \nhide ibu:\nreno reno left: Baiklah kalau begitu. Karena
+      aku baik hati, aku akan menunjukkan caranya keluar dari Wonderlik untuk kalian.
+      \nhide reno:\nmalik malikBingung right: Bagaimana caranya, Reno? \nhide malik:\nreno
+      reno left: Yang pertamaaa\u2014\nAku punya sebuah buku dongeng, tapi kata-kata
       di buku ini banyak yang hilang. Tugas kalian adalah mencari kata-kata yang
       hilang itu. Kata-kata yang hilang itu tersebar di sekitar sini, tetapi wujudnya
       tersembunyi, sehingga kalian perlu mencarinya dengan teliti. Apakah kalian
-      sanggup? \nhide reno:\nmalik malik left: Baiklah, aku dan Ibu akan mencari
-      kata-kata yang hilang itu. \nhide malik:\nibu ibu right: (ibu mengangguk setuju)\nhide
-      ibu:\nreno reno left: Keberanian yang patut diacungi jempol. Semoga beruntung.
+      sanggup? \nhide reno:\nmalik malik right: Baiklah, aku dan Ibu akan mencari
+      kata-kata yang hilang itu. \nhide malik:\nibu ibu left: (ibu mengangguk setuju)\nhide
+      ibu:\nreno reno right: Keberanian yang patut diacungi jempol. Semoga beruntung.
       Aku sangat ingin membaca buku itu. \nhide reno: "
   clearPrevious:
     booleanRef: {fileID: 0}
@@ -1117,9 +1120,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "malik malik right: Ibu, ini kita di mana?\nhide malik:\nibu ibu left:
-      Ibu juga nggak tahu, Nak. Mungkin \rkita bisa cari tahu dengan jalan-\rjalan
-      ke depan sana.\nhide ibu:\n"
+    stringVal: "malik malikBingung right: Ibu, ini kita di mana?\nhide malikBingung:\nibu
+      ibuBingung left: Ibu juga nggak tahu, Nak. Mungkin \rkita bisa cari tahu dengan
+      jalan-\rjalan ke depan sana.\nhide ibu:\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1358,7 +1361,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2340, y: 1080}
+  m_SizeDelta: {x: 2408, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752462136
 MonoBehaviour:
@@ -1433,7 +1436,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2340, y: 1080}
+  m_SizeDelta: {x: 2408, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771349120
 MonoBehaviour:
@@ -1484,7 +1487,7 @@ PrefabInstance:
     - target: {fileID: 3054069392562005664, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -797
+      value: -817
       objectReference: {fileID: 0}
     - target: {fileID: 3854923788028692584, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
@@ -1600,6 +1603,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: e8bdaacf769bef34b90931d71bd0c40e, type: 3}
+  - {fileID: 21300000, guid: a23ab50133ac29c4c8fbcb28f25e116c, type: 3}
+  - {fileID: 21300000, guid: a36f8a86eea11694a8d51bbb358fdb82, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

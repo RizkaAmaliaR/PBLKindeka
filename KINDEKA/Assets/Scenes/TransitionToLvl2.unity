@@ -378,7 +378,9 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: cebd6cd0ba1f3ce4591636f107e01e54, type: 3}
+  - {fileID: 21300000, guid: 6848446231d7af347a13711b5da52c6f, type: 3}
+  - {fileID: 21300000, guid: 97a909b7f210cc24cb6acdf7161a5a69, type: 3}
+  - {fileID: 21300000, guid: c29f7458594250a45b4b2d0d9d096779, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -483,6 +485,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: e8bdaacf769bef34b90931d71bd0c40e, type: 3}
+  - {fileID: 21300000, guid: b4532334d807fa441a4b084dd1a3df98, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -704,7 +707,8 @@ MonoBehaviour:
   nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: ed1591f8d31407a45be8f4e46a77ccf1, type: 3}
+  - {fileID: 21300000, guid: 28b95677b43a12849aa2dc537e197919, type: 3}
+  - {fileID: 21300000, guid: 91b6f84373dcb2b41927910eb20601d9, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -736,7 +740,6 @@ GameObject:
   - component: {fileID: 1885014769}
   - component: {fileID: 1885014768}
   - component: {fileID: 1885014767}
-  - component: {fileID: 1885014772}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -760,18 +763,18 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "malikibu MaliknIbu right: Reno, Reno!\nhide malikibu:\nreno reno
-      left: Ada apa? Apakah sesuatu terjadi terhadap kalian? \nhide reno:\nmalik
-      malik right: Reno, buku dongeng milikmu telah dicuri seseorang!\nhide malik:\nreno
-      reno left: Hah?! Bagaimana bisa buku dongengku dicuri? \nhide reno:\nibu ibu
-      right: Tadi ketika kami sedang berjalan \rkesini, tiba-tiba ada sesosok makhluk
-      lewat di depan kami. Pergerakannya cepat sekali, sampai-sampai kami tidak sadar
-      \rbahwa ternyata dia merampas buku dongeng milikmu, Reno.\nhide ibu:\nreno
-      reno left: Aduuuh, itu buku dongeng kesayanganku! \nhide reno:\nibu ibu right:
-      Maafkan kami, ya, Reno. Bagaimana jika sekarang kami mencari orang \ryang sudah
-      mencuri buku dongengmu? \nhide ibu:\nreno reno left: Ide yang bagus! Aku tidak
-      mau kehilangan buku dongengku. Ayo, \rkita kembali ke tempat di mana kalian
-      bertemu sosok itu. \nhide reno:"
+    stringVal: "ibu ibuMalikSerius right: Reno! Reno!\nhide ibu:\nReno reno left:
+      Ada apa? Apakah sesuatu terjadi terhadap kalian?\nhide reno:\nmalik malikPanik
+      right: Reno, buku dongeng milikmu telah \rdicuri seseorang! \nhide malik:\nreno
+      renoTerkejut left: Hah?! Bagaimana bisa buku dongengku dicuri? \nhide reno:\nibu
+      ibuSerius right: Tadi ketika kami sedang berjalan kesini, tiba-tiba ada sesosok
+      \rmakhluk lewat di depan kami. \rPergerakannya cepat sekali, sampai-sampai
+      kami tidak sadar \rbahwa ternyata dia merampas buku \rdongeng milikmu, Reno.\nhide
+      ibu:\nreno renoMarah left: Aduuuh, itu buku dongeng kesayanganku!\nhide reno:\nibu
+      ibuSerius right: Maafkan kami, ya, Reno. Bagaimana \rjika sekarang kami mencari
+      orang yang sudah mencuri buku dongengmu? \nhide ibu: \nreno reno left: Ide
+      yang bagus! Aku tidak mau kehilangan buku dongengku. Ayo, \rkita kembali ke
+      tempat di mana \rkalian bertemu sosok itu.\nhide reno:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -825,7 +828,6 @@ MonoBehaviour:
   eventHandler: {fileID: 1885014768}
   commandList:
   - {fileID: 1885014767}
-  - {fileID: 1885014772}
   suppressAllAutoSelections: 0
 --- !u!114 &1885014770
 MonoBehaviour:
@@ -853,7 +855,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1885014769}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1885014767}
   variables: []
   description: 
   stepPause: 0
@@ -880,43 +883,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1885014772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885014766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "ibu ibu right: Reno, ini ada jejak kaki. Saya \rrasa ini jejak kaki
-      milik makhluk \ryang tadi mencuri bukumu. \nhide ibu:\nreno reno left: Benar
-      juga. Aku familiar dengan \rjejak kaki ini. Tapi jejak kaki \rsaja tidak cukup
-      bukti. \nhide reno:\nmalik malik right: Reno! Aku menemukan sesuatu!\nIni,
-      di semak-semak tadi aku \rmenemukan syal dan bulu. Ini pasti \rbisa menjadi
-      petunjuk siapa yang \rsudah mencuri buku dongengmu. \nhide malik:\nreno reno
-      left: Ini baru namanya cukup bukti\nAku tahu beberapa hewan yang patut \rdicurigai.
-      Kalian harus membantuku menentukan siapakah pelaku dari \rpencurian buku dongengku.
-      \nhide reno:"
-  clearPrevious:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForInput:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForSeconds:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  fadeWhenDone:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
 --- !u!1001 &1956024832
 PrefabInstance:
   m_ObjectHideFlags: 0
