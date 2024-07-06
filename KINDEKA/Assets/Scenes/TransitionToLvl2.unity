@@ -740,6 +740,10 @@ GameObject:
   - component: {fileID: 1885014769}
   - component: {fileID: 1885014768}
   - component: {fileID: 1885014767}
+  - component: {fileID: 1885014774}
+  - component: {fileID: 1885014773}
+  - component: {fileID: 1885014772}
+  - component: {fileID: 1885014775}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -828,6 +832,10 @@ MonoBehaviour:
   eventHandler: {fileID: 1885014768}
   commandList:
   - {fileID: 1885014767}
+  - {fileID: 1885014774}
+  - {fileID: 1885014773}
+  - {fileID: 1885014772}
+  - {fileID: 1885014775}
   suppressAllAutoSelections: 0
 --- !u!114 &1885014770
 MonoBehaviour:
@@ -856,7 +864,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1885014769}
   selectedCommands:
-  - {fileID: 1885014767}
+  - {fileID: 1885014775}
   variables: []
   description: 
   stepPause: 0
@@ -883,6 +891,121 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885014772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885014766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "malik malik left: Ini, di semak-semak tadi aku \rmenemukan syal dan
+      bulu. Ini pasti \rbisa menjadi petunjuk siapa yang \rsudah mencuri buku dongengmu.
+      \nhide malik:\nreno reno right: Ini baru namanya cukup bukti \nAku tahu beberapa
+      hewan yang patut \rdicurigai. Kalian harus membantuku \rmenentukan siapakah
+      pelaku dari \rpencurian buku dongengku. \nhide reno:"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &1885014773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885014766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'malik malik right: Reno! Aku menemukan sesuatu!
+
+      hide malik:'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &1885014774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885014766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "ibu ibuserius right: Reno, ini ada jejak kaki. Saya \rrasa ini jejak
+      kaki milik makhluk \ryang tadi mencuri bukumu.\nhide ibu:\nreno reno left:
+      Benar juga. Aku familiar dengan \rjejak kaki ini. Tapi jejak kaki \rsaja tidak
+      cukup bukti.\nhide reno:"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &1885014775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885014766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Lvl2
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1001 &1956024832
 PrefabInstance:
   m_ObjectHideFlags: 0
