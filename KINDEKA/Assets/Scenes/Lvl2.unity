@@ -737,8 +737,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 571508723}
-  selectedCommands:
-  - {fileID: 571508730}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1406,7 +1405,7 @@ PrefabInstance:
     - target: {fileID: 3054069392562005664, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -798
+      value: -768
       objectReference: {fileID: 0}
     - target: {fileID: 4737938787830126532, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
@@ -1421,7 +1420,7 @@ PrefabInstance:
     - target: {fileID: 6459227592798163483, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -798
+      value: -768
       objectReference: {fileID: 0}
     - target: {fileID: 7224377820663686158, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
