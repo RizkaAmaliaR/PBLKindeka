@@ -26,12 +26,12 @@ public class HurtPlayer : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            Debug.Log("Hit");
+            //Debug.Log("Hit");
             waitToHurt -= Time.deltaTime;
             if (waitToHurt <= 0)
             {
                 healtMan.HurtPlayer(damageToGive);
-                waitToHurt = 0.5f;
+                waitToHurt = 0.4f;
             }
         }
         

@@ -15,6 +15,10 @@ public class HealthManager : MonoBehaviour
 
     public Sprite emptyHeart;
 
+    public GameObject UIKalah;
+
+    public GameObject NPC;
+
 
     private void Update()
     {
@@ -51,7 +55,8 @@ public class HealthManager : MonoBehaviour
 
         if(health < 0)
         {
-            gameObject.SetActive(false);
+            UIKalah.SetActive(true);
+            NPC.SetActive(false);
         }
     }
 }

@@ -20,6 +20,7 @@ public class NPCfollow : MonoBehaviour
     public GameObject UIWarning;
     public GameObject UIInfoWarning;
 
+
     public Animator anim;
 
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class NPCfollow : MonoBehaviour
         InvokeRepeating("CheckDistance", 0, 0.5f);
 
         startPos = this.transform.position;
+      
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class NPCfollow : MonoBehaviour
     public void Move()
     {
         if (currentTarget != null)
-        {
+        {   
             agent.destination = currentTarget.transform.position;
             anim.SetBool("isWalking", true);
         }

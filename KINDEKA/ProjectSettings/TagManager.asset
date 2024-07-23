@@ -11,6 +11,7 @@ TagManager:
   - Box3
   - Box4
   - Box5
+  - Audio
   layers:
   - Default
   - TransparentFX
