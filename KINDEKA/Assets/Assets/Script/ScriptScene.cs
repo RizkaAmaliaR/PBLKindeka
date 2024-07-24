@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ScriptScene : MonoBehaviour
 {
+
     public void BtnPlay()
     {
         SceneManager.LoadScene("IntroCutScene");

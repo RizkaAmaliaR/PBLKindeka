@@ -4,30 +4,29 @@ using UnityEngine.AI;
 
 public class TriggerMusic : MonoBehaviour
 {
-    public AudioClip None;
-
-    private AudioManager audioManager;
+    public AudioClip NPCFollow;
+    public AudioClip newBgm;
+    private SwitchBgmBoxAnimation newAudioManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioManager = FindAnyObjectByType<AudioManager>();
+        newAudioManager = FindAnyObjectByType<SwitchBgmBoxAnimation>();
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
             Debug.Log("masuk");
-            audioManager.ChangeMusic(None);
+            newAudioManager.ChangeMusic(NPCFollow);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Keluar");
-        audioManager.ChangeMusic(audioManager.backsound);
+        newAudioManager.ChangeMusic(newBgm);
     }
 
 }

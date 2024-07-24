@@ -11,9 +11,8 @@ public class BoxController : MonoBehaviour
 
     public GameObject NPC;
 
-    public GameObject Audiomanager;
-
-    AudioManager audioManager;
+    public AudioClip SfxBox;
+    SwitchBgmBoxAnimation NewAudioManager;
 
     //Mengembara
     public GameObject UIInteractBoxMengembara;
@@ -47,7 +46,7 @@ public class BoxController : MonoBehaviour
 
     //Animasi Box
     public GameObject BoxAnimasi;
-    public GameObject BacksoundPlay;
+    public GameObject NewBgm;
     public GameObject TeksMengembara;
     public GameObject TeksBeruang;
     public GameObject TeksMengendus;
@@ -56,7 +55,7 @@ public class BoxController : MonoBehaviour
 
     private void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        NewAudioManager = FindAnyObjectByType<SwitchBgmBoxAnimation>();
     }
 
 
@@ -112,18 +111,15 @@ public class BoxController : MonoBehaviour
     {
         if (UIInteractBoxMengembara.activeSelf)
         {
-            audioManager.PlaySFX(audioManager.BoxCollecting);
+            NewAudioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMengembara.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                Audiomanager.SetActive(false);
-                BacksoundPlay.SetActive(false);
-                //audioManager.StopMusic();
+                NewBgm.SetActive(false);
             }
-
             boxCount++;
             Debug.Log("Box =" + boxCount);
             Destroy(BoxMengembara);
@@ -134,14 +130,14 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxBeruang.activeSelf)
         {
-            audioManager.PlaySFX(audioManager.BoxCollecting);
+            NewAudioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksBeruang.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                BacksoundPlay.SetActive(false);
+                NewBgm.SetActive(false);
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -153,14 +149,14 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxMengendus.activeSelf)
         {
-            audioManager.PlaySFX(audioManager.BoxCollecting);
+            NewAudioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMengendus.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                BacksoundPlay.SetActive(false);
+                NewBgm.SetActive(false);
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -172,15 +168,14 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxMenyentuh.activeSelf)
         {
-            audioManager.PlaySFX(audioManager.BoxCollecting);
+            NewAudioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMenyentuh.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                BacksoundPlay.SetActive(false);
-                //audioManager.StopMusic();
+                NewBgm.SetActive(false);
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -192,14 +187,14 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxBersahabat.activeSelf)
         {
-            audioManager.PlaySFX(audioManager.BoxCollecting);
+            NewAudioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksBersahabat.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                BacksoundPlay.SetActive(false);
+                NewBgm.SetActive(false);
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
