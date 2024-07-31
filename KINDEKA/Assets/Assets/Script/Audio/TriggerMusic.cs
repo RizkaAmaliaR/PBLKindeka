@@ -4,14 +4,17 @@ using UnityEngine.AI;
 
 public class TriggerMusic : MonoBehaviour
 {
-    public AudioClip NPCFollow;
-    public AudioClip newBgm;
-    private SwitchBgmBoxAnimation newAudioManager;
+    //public AudioClip newBgm;
+    private AudioManager newAudioManager;
+    public GameObject UIInfoWarning;
+
+    AudioSource audioNPC;
 
     // Start is called before the first frame update
     void Start()
     {
-        newAudioManager = FindAnyObjectByType<SwitchBgmBoxAnimation>();
+        newAudioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioNPC = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,14 +22,17 @@ public class TriggerMusic : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Debug.Log("masuk");
-            newAudioManager.ChangeMusic(NPCFollow);
+            AudioManager.instance.GetComponent<AudioSource>().Pause();
+            audioNPC.Play();
+            //newAudioManager.ChangeMusic(NPCFollow);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Keluar");
-        newAudioManager.ChangeMusic(newBgm);
+        audioNPC.Stop();
+        AudioManager.instance.GetComponent<AudioSource>().UnPause();
     }
 
 }

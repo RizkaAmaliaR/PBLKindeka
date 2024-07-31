@@ -30,7 +30,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: 0.27690858, y: 0.27690858, z: 0.27690858}
+        value: {x: 0.1927286, y: 0.1927286, z: 0.1927286}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -40,7 +40,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: UIKalah/UIKalah
+    path: UIKalah
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -51,7 +51,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1154908725
+      path: 372062780
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -96,7 +96,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.27690858
+        value: 0.1927286
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -107,7 +107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: UIKalah/UIKalah
+    path: UIKalah
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -126,7 +126,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.27690858
+        value: 0.1927286
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -137,7 +137,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: UIKalah/UIKalah
+    path: UIKalah
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -156,7 +156,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.27690858
+        value: 0.1927286
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -167,7 +167,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: UIKalah/UIKalah
+    path: UIKalah
     classID: 224
     script: {fileID: 0}
     flags: 0

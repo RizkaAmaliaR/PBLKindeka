@@ -10,7 +10,7 @@ public class SwitchMusicOnLoad : MonoBehaviour
     {
         newAudioManager = FindAnyObjectByType<AudioManager>();
 
-        newAudioManager.ChangeMusic(newBgm);
+        newAudioManager.PlaySFX(newBgm);
     }
 
 }

@@ -7,17 +7,19 @@ public class PlayerMovement : MonoBehaviour
     public FixedJoystick joystick;
     public float SpeedMove = 5f;
     private CharacterController controller;
-    private Animator anim;
 
     private float _gravity = -9.81f;
     [SerializeField] private float gravityMultiplier = 3.0f;
     private float _velocity;
 
+    AudioSource audioWalking;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
+
+        audioWalking = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,5 +36,17 @@ public class PlayerMovement : MonoBehaviour
 
         //Move the character controller
         controller.Move(Move * SpeedMove * Time.deltaTime);
+
+        /*if(Move.magnitude > 0.1f)
+        {
+            if(!audioWalking.isPlaying)
+            {
+                audioWalking.Play();
+            }
+        }
+        else
+        {
+            audioWalking.Stop();
+        }*/
     }
 }

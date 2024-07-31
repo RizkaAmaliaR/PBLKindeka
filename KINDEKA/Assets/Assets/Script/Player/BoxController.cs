@@ -12,7 +12,7 @@ public class BoxController : MonoBehaviour
     public GameObject NPC;
 
     public AudioClip SfxBox;
-    SwitchBgmBoxAnimation NewAudioManager;
+    AudioManager audioManager;
 
     //Mengembara
     public GameObject UIInteractBoxMengembara;
@@ -46,7 +46,9 @@ public class BoxController : MonoBehaviour
 
     //Animasi Box
     public GameObject BoxAnimasi;
-    public GameObject NewBgm;
+    public GameObject UIInput;
+    public GameObject UIHealth;
+    public GameObject MiniMap;
     public GameObject TeksMengembara;
     public GameObject TeksBeruang;
     public GameObject TeksMengendus;
@@ -55,7 +57,7 @@ public class BoxController : MonoBehaviour
 
     private void Awake()
     {
-        NewAudioManager = FindAnyObjectByType<SwitchBgmBoxAnimation>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
 
@@ -111,14 +113,17 @@ public class BoxController : MonoBehaviour
     {
         if (UIInteractBoxMengembara.activeSelf)
         {
-            NewAudioManager.PlaySFX(SfxBox);
+            audioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMengembara.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                NewBgm.SetActive(false);
+                UIInput.SetActive(false);
+                UIHealth.SetActive(false);
+                MiniMap.SetActive(false);
+                //AudioManager.instance.GetComponent<AudioSource>().Pause();
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -130,14 +135,17 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxBeruang.activeSelf)
         {
-            NewAudioManager.PlaySFX(SfxBox);
+            audioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksBeruang.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                NewBgm.SetActive(false);
+                UIInput.SetActive(false);
+                UIHealth.SetActive(false);
+                MiniMap.SetActive(false);
+                //AudioManager.instance.GetComponent<AudioSource>().Pause();
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -149,14 +157,17 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxMengendus.activeSelf)
         {
-            NewAudioManager.PlaySFX(SfxBox);
+            audioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMengendus.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                NewBgm.SetActive(false);
+                UIInput.SetActive(false);
+                UIHealth.SetActive(false);
+                MiniMap.SetActive(false);
+                //AudioManager.instance.GetComponent<AudioSource>().Pause();
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -168,14 +179,17 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxMenyentuh.activeSelf)
         {
-            NewAudioManager.PlaySFX(SfxBox);
+            audioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksMenyentuh.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                NewBgm.SetActive(false);
+                UIInput.SetActive(false);
+                UIHealth.SetActive(false);
+                MiniMap.SetActive(false);
+                //AudioManager.instance.GetComponent<AudioSource>().Pause();
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -187,14 +201,17 @@ public class BoxController : MonoBehaviour
 
         if (UIInteractBoxBersahabat.activeSelf)
         {
-            NewAudioManager.PlaySFX(SfxBox);
+            audioManager.PlaySFX(SfxBox);
             Debug.Log("SFX PLAY");
             BoxAnimasi.SetActive(true);
             TeksBersahabat.SetActive(true);
             if (BoxAnimasi.activeSelf)
             {
                 NPC.SetActive(false);
-                NewBgm.SetActive(false);
+                UIInput.SetActive(false);
+                UIHealth.SetActive(false);
+                MiniMap.SetActive(false);
+                //AudioManager.instance.GetComponent<AudioSource>().Pause();
             }
             boxCount++;
             Debug.Log("Box =" + boxCount);
@@ -211,6 +228,8 @@ public class BoxController : MonoBehaviour
         {
             MissionCompleted.SetActive(true);
         }
-        
+
+        //AudioManager.instance.GetComponent<AudioSource>().UnPause();
+
     }
 }

@@ -8,7 +8,6 @@ public class AIPatrol : MonoBehaviour
     NavMeshAgent agent;
     public List<Transform> waypoints;
     public int waypointIndex = 0;
-    Vector3 target;
 
     Animator anim;
 

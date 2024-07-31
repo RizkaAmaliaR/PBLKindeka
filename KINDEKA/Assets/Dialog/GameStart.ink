@@ -1,3 +1,0 @@
-Kita coba
-
-semoga bisa

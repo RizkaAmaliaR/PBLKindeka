@@ -79,6 +79,7 @@ public class NPCfollow : MonoBehaviour
         if (distance < warning)
         {
             UIWarning.SetActive(true);
+
             //UIInfoWarning.SetActive(true);
         }
         else

@@ -21,4 +21,25 @@ public class ScriptScene : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void ToSceneMalikRoom()
+    {
+        SceneManager.LoadScene("DialogMalikRoom");
+    }
+    public void ToSceneDialogDuniaWonderlik()
+    {
+        SceneManager.LoadScene("DialoginDuniaWondelik");
+    }
+    public void ToSceneTransitionLvl2()
+    {
+        SceneManager.LoadScene("TransitionToLvl2");
+    }
+    public void ToSceneLvl1()
+    {
+        SceneManager.LoadScene("Lvl1");
+    }
+    public void ToSceneLvl2()
+    {
+        SceneManager.LoadScene("Lvl2");
+    }
 }

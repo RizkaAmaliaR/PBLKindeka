@@ -8,11 +8,6 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    //new change
-    [SerializeField] private AudioMixerGroup musicMixerGroup;
-    [SerializeField] private AudioMixerGroup soundEffectMixerGroup;
-
-
     [Header("------------- Audio Source -----------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
@@ -22,31 +17,39 @@ public class AudioManager : MonoBehaviour
     public AudioClip BoxCollecting;
     public AudioClip NPCFollowing;
 
-    public void Start()
+    /*public void Start()
     {
         //DontDestroyOnLoad(gameObject);
 
         musicSource.clip = backsound;
         musicSource.Play();
+        return;
 
         //fade in fade out
         //musicSource = GetComponent<AudioSource>();
         //musicSource.volume = 0f;
         //StartCoroutine(Fade(true, musicSource, 2f, 0.1f));
         //StartCoroutine(Fade(false, musicSource, 2f, 0f));
-    }
+    }*/
 
-    private void Awake()
+    public void Awake()
     {
-        if(instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
+        musicSource.clip = backsound;
+        musicSource.Play();
+
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        /*musicSource.clip = backsound;
+        musicSource.Play();
+        return;*/
     }
 
     public void ChangeMusic(AudioClip music)
@@ -69,7 +72,7 @@ public class AudioManager : MonoBehaviour
         SFXSource.PlayOneShot(sfx);
     }
 
-    public void StopBGM()
+    /*public void StopBGM()
     {
         if(SceneManager.GetActiveScene().name == "DialoginDuniaWondelik")
         {
@@ -79,11 +82,17 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.Pause();
         }
-    }
+    }*/
 
     public void PauseMusic()
     {
         musicSource.Pause();
+    }
+
+    public void UnPauseMusic()
+    {
+        musicSource.UnPause();
+        musicSource.Play();
     }
 
     void Update()
