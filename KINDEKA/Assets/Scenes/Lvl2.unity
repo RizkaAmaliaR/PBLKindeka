@@ -1237,7 +1237,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.91028
     y: 150.36636
-    width: 115.67161
+    width: 110.327835
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1271,11 +1271,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 287.52087, y: -61.275383}
+  scrollPos: {x: 77.53464, y: 23.676842}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6700003
+  zoom: 0.6100004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1283,9 +1283,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 571508735}
+  - {fileID: 571508723}
   selectedCommands:
-  - {fileID: 571508738}
+  - {fileID: 571508726}
   variables: []
   description: 
   stepPause: 0
@@ -1338,7 +1338,7 @@ MonoBehaviour:
       right: Sudahlah, Lang. Kembalikan saja \rsebelum aku panggilkan polisi.\nhide
       reno:\nlang langsedih left: Aku minta maaf, Reno. Sudah lama \rsekali aku ingin
       membaca buku ini, \rtapi sulit sekali menemukan buku \rini dalam bentuk yang
-      lengkap. \rKarena tadi aku lihat mereka \rmembawa buku ini setelah \rberkeliling
+      lengkap.\nKarena tadi aku lihat mereka \rmembawa buku ini setelah \rberkeliling
       mengumpulkan kata yang \rhilang, aku jadi ingin sekali \rmemilikinya.\nhide
       lang:\nreno reno right: Kamu bisa pinjam buku ini secara \rbaik-baik, Lang.
       Kamu tahu aku \rpasti akan meminjamkannya.\nhide reno:\nlang langsedih left:
@@ -1374,9 +1374,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "ibu ibuserius right: Reno, kami yakin Lang adalah \rpencurinya. \nhide
+    stringVal: "ibu maliknibu right: Reno, kami yakin Lang adalah \rpencurinya. \nhide
       ibu:\nreno reno left: Aku tahu itu. Di sini, Lang memang \rdijuluki Si Tangan
-      Panjang. Apakah \rkalian mau membantuku berbicara \rdengannya?\nhide reno:"
+      Panjang.\nApakah \rkalian mau membantuku berbicara \rdengannya?\nhide reno:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1499,7 +1499,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.936356
     y: 75.17718
-    width: 109.70146
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1697,7 +1697,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 194.22375
     y: 147.59502
-    width: 103.73132
+    width: 97.21309
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 208.00156
     y: 73.42164
-    width: 113.283554
+    width: 107.70488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2085,7 +2085,8 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 91b6f84373dcb2b41927910eb20601d9, type: 3}
+  - {fileID: 21300000, guid: 8480297e9e249884d9a0512d1c965315, type: 3}
+  - {fileID: 21300000, guid: 80919c4d027a80d4ea10c6c19982c31f, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -2369,12 +2370,12 @@ PrefabInstance:
     - target: {fileID: 244824785063198565, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3054069392562005664, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -699
+      value: -660
       objectReference: {fileID: 0}
     - target: {fileID: 4737938787830126532, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
@@ -2388,8 +2389,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6459227592798163483, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 897
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459227592798163483, guid: 68cdf716fa953be45bd55e752351fadc,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -699
+      value: -660
       objectReference: {fileID: 0}
     - target: {fileID: 7224377820663686158, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
@@ -3842,6 +3848,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1724994026209381170, guid: b3039231a2be2ee4381ee782bf58cf21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4791170608830715404, guid: b3039231a2be2ee4381ee782bf58cf21,
         type: 3}
       propertyPath: clickMode
@@ -3860,6 +3871,11 @@ PrefabInstance:
     - target: {fileID: 8469753094952583702, guid: b3039231a2be2ee4381ee782bf58cf21,
         type: 3}
       propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136962814392402921, guid: b3039231a2be2ee4381ee782bf58cf21,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

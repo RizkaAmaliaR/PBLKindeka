@@ -961,15 +961,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 244824785063198565, guid: 68cdf716fa953be45bd55e752351fadc,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3054069392562005664, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -679
+      value: -664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459227592798163483, guid: 68cdf716fa953be45bd55e752351fadc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 879
       objectReference: {fileID: 0}
     - target: {fileID: 6459227592798163483, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -679
+      value: -664
       objectReference: {fileID: 0}
     - target: {fileID: 7989734162270100668, guid: 68cdf716fa953be45bd55e752351fadc,
         type: 3}
@@ -1278,7 +1288,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 28b95677b43a12849aa2dc537e197919, type: 3}
-  - {fileID: 21300000, guid: 91b6f84373dcb2b41927910eb20601d9, type: 3}
+  - {fileID: 21300000, guid: 8480297e9e249884d9a0512d1c965315, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1837,7 +1847,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1885014769}
   selectedCommands:
-  - {fileID: 1885014773}
+  - {fileID: 1885014767}
   variables: []
   description: 
   stepPause: 0
@@ -2529,6 +2539,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1724994026209381170, guid: b3039231a2be2ee4381ee782bf58cf21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4791170608830715404, guid: b3039231a2be2ee4381ee782bf58cf21,
         type: 3}
       propertyPath: clickMode
@@ -2538,6 +2553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136962814392402921, guid: b3039231a2be2ee4381ee782bf58cf21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2674,7 +2694,7 @@ PrefabInstance:
     - target: {fileID: 2209895458907474577, guid: 5fa6b96671ac3db4b83f1b985bc29c02,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3339212716533446582, guid: 5fa6b96671ac3db4b83f1b985bc29c02,
         type: 3}
